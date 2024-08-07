@@ -1,0 +1,22 @@
+:host{
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(21, 21, 21);
+    height: 5rem;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+}
+
+ul{
+    display: flex;
+    gap: 20px;
+
+}
+
+li{
+    cursor: pointer;
+    list-style-type: none;
+}
