@@ -6,22 +6,24 @@ import { MediaComponent } from './media/media.component';
 
 export const routes: Routes = [
   {
-    path: 'admin',
-    component: AdminComponent,
-  },
-
-  {
-    path: 'news',
-    component: NewsComponent,
-  },
-
-  {
-    path: 'media',
-    component: MediaComponent,
-  },
-  {
     path: 'home',
     component: HomepageComponent,
+  },
+
+  {
+    path: 'admin',
+    component: AdminComponent,
+    children: [
+      {
+        path: 'news',
+        component: NewsComponent,
+      },
+
+      {
+        path: 'media',
+        component: MediaComponent,
+      },
+    ],
   },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
