@@ -2,12 +2,10 @@ import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-menu',
+  selector: 'app-menu-admin',
   standalone: true,
   imports: [RouterModule],
-  templateUrl: './menu.component.html',
-  styleUrl: './menu.component.scss'
+  templateUrl: './menu-admin.component.html',
+  styleUrl: './menu-admin.component.scss',
 })
-export class MenuComponent {
-
-}
+export class MenuAdminComponent {}

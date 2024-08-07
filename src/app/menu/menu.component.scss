@@ -1,22 +1,35 @@
-:host{
-    color: #fff;
-    position: absolute;
-    bottom: 0;
-    background-color: rgb(21, 21, 21);
-    height: 5rem;
-display: flex;
-align-items: center;
-justify-content: center;
-width: 100%;
+:host {
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(21, 21, 21);
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  opacity: 0;
 }
 
-ul{
-    display: flex;
-    gap: 20px;
-
+:host:hover {
+  opacity: 1;
 }
 
-li{
+ul {
+  display: flex;
+  gap: 20px;
+}
+
+li {
+  cursor: pointer;
+  list-style-type: none;
+}
+
+
+.menu-btn{
     cursor: pointer;
-    list-style-type: none;
+}
+
+.menu-btn:hover{
+color: red
 }
