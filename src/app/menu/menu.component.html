@@ -1,18 +1,19 @@
 <nav>
   <ul>
-    <div
+    <li
       [routerLink]="['/login']"
       routerLinkActive="router-link-active"
       class="menu-btn"
     >
       Admin
-    </div>
-    <div
+  </li>
+    <li
       [routerLink]="['/home']"
       routerLinkActive="router-link-active"
       class="menu-btn"
     >
       Home
-    </div>
+</li>
+<li [routerLink]="['/routePath']" routerLinkActive="router-link-active">FullScreen</li> 
   </ul>
 </nav>

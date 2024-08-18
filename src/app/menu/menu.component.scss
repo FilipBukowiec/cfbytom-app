@@ -1,6 +1,6 @@
 :host {
   color: #fff;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   background-color: rgb(228, 19, 19);
   height: 3rem;
@@ -9,11 +9,14 @@
   justify-content: center;
   width: 100%;
   opacity: 0;
+  z-index: 1000;
+
 }
 
 :host:hover {
   opacity: 1;
-}
+ 
+ }
 
 ul {
   display: flex;
@@ -25,11 +28,10 @@ li {
   list-style-type: none;
 }
 
-
-.menu-btn{
-    cursor: pointer;
+.menu-btn {
+  cursor: pointer;
 }
 
-.menu-btn:hover{
-color: red
+.menu-btn:hover {
+  color: red;
 }
