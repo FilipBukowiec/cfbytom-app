@@ -14,6 +14,6 @@
     >
       Home
 </li>
-<li [routerLink]="['/routePath']" routerLinkActive="router-link-active">FullScreen</li> 
+<li (click)="toggleFullscreen()">{{isFullscreen ? 'Exit FullScreen' : 'Go FullScreen'}} </li> 
   </ul>
 </nav>
