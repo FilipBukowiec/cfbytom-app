@@ -1,19 +1,12 @@
 <nav>
   <ul>
-    <li
-      [routerLink]="['/login']"
-      routerLinkActive="router-link-active"
-      class="menu-btn"
-    >
+    <li [routerLink]="['/login']" routerLinkActive="router-link-active" class="menu-btn">
       Admin
-  </li>
-    <li
-      [routerLink]="['/home']"
-      routerLinkActive="router-link-active"
-      class="menu-btn"
-    >
+    </li>
+    <li [routerLink]="['/home']" routerLinkActive="router-link-active" class="menu-btn">
       Home
-</li>
-<li (click)="toggleFullscreen()">{{isFullscreen ? 'Exit FullScreen' : 'Go FullScreen'}} </li> 
+    </li>
+    <li (click)="toggleFullscreen()">{{isFullscreen ? 'Exit FullScreen' : 'Go FullScreen'}} </li>
   </ul>
 </nav>
+
